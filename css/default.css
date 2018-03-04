@@ -1,0 +1,330 @@
+﻿/* ------ Общие стили
+-----------------------------------------------*/
+
+
+
+.pd{
+padding:10px;
+background:#B0AFAF;
+float:left;
+clear:both;
+width:100%;
+margin-bottom:10px;
+font-weight: bold;
+}
+
+.code_sample{
+float:left;
+}
+
+
+body {
+	background: #ccc;
+}
+
+
+
+
+.main-header {
+	width: 100%;
+	height: 55px;
+	border: 2px solid black;
+	background: ;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	background: radial-gradient(circle farthest-side at 0px 27.5px,  #fff, #000);
+	margin-bottom: 30px;
+}
+
+
+
+
+.main-gif__wrap {
+	border: 10px solid #313435;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+
+.main-links {
+	margin-left: 4%;
+	display: inline-block;
+}
+.main-links__info, .main-links__share, .main-links__gallery {
+	display: inline-block;
+	width: 355px;
+	height: 305px;
+	margin-right: 20px;
+	border: 5px solid black;
+	border-radius: 50%;
+	background-color: #999999;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 50px;
+
+
+
+}
+/* INFO */
+
+/* slider */
+.slider-wrap {
+	width: 90%;
+	height: 650px;
+	background-color: #999999;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider-wrap > input {
+	display: none;
+}
+.slider-wrap > label {
+	display: none;
+}
+
+.slider-wrap > input:checked + div + label, .slider-wrap > input:checked + div + label + label {
+	display: block;
+	width: 150px;
+	height: 100%;
+	background-color: none;
+	font-size: 70px;
+
+	cursor: pointer;
+
+	position: absolute;
+	z-index: 100;
+}
+
+.slider-wrap > input:checked + div + label:after, .slider-wrap > input:checked + div + label + label:after {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+}
+
+.slider-wrap > input:checked + div + label {
+	left: -40px;
+}
+.slider-wrap > input:checked + div + label:after {
+	content: "◀";
+	left: 40%;
+	top: 20%;
+}
+
+.slider-wrap > input:checked + div + label + label {
+	right: -40px;
+}
+.slider-wrap > input:checked + div + label + label:after {
+	content: "▶";
+	right: 40%;
+	top: 20%;
+}
+/* picture beginning */
+.slide {
+
+
+
+
+}
+.slider-wrap > div {
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	right: 0%;
+	bottom: 0;
+	z-index: 0;
+	/* паддинги для центровки изображений in slider */
+	padding-left: 20%;
+
+}
+
+.slider-wrap > div {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+.slider-wrap > input:checked + div {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+/* picture end */
+
+
+
+
+
+
+
+
+
+
+
+/* VISITED */
+.visited-header {
+	height: 60px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background: radial-gradient(circle at center,  #454142, #6e6d6f);
+	width: auto;
+	text-align: center;
+}
+
+.background {
+	background-color: #ddcae5;
+	padding-right: 70px;
+	padding-left: 70px;
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+.content {
+	background-color: #b3b3b3;
+	height: 30em;
+	padding-top: 90px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.content:hover {
+	background-color: #dcdada;
+}
+.content__info {
+	text-align: center;
+	font-size: 41px;
+	padding-bottom: 80px;
+}
+
+.content__join:hover {
+	color: #7b0386;
+}
+
+
+
+.main-footer {
+	width: 100%;
+	height: 60px;
+	background: radial-gradient(circle at center,  #292627, #6e6d6f);
+	border-top: 2px solid black;
+}
+.footer-element {
+	float: left;
+	width: 180px;
+	height: auto;
+	padding-top: 10px;
+	text-decoration-color: white;
+}
+.footer-element_spb {
+	float: right;
+	padding-top: 5px;
+}
+.footer-element__text {
+	text-align: center;
+	text-decoration: uppercase;
+	font-size: 15px;
+	color: white;
+
+}
+.footer-element__text_spb {
+	color: black;
+}
+/* ------ Стили для mobilyslider
+-----------------------------------------------*/
+
+#content {
+width:800px;
+margin:100px auto 0;
+}
+
+.slider {
+float:left;
+width:1000px;
+height:675px;
+position:relative;
+padding-bottom:26px;
+background:url(../gfx/bottom_shadow.png) no-repeat bottom center;
+}
+
+.sliderContent {
+float:left;
+width:1000px;
+height:675px;
+clear:both;
+position:relative;
+overflow:hidden;
+}
+
+.sliderArrows a {
+display:block;
+text-indent:-9999px;
+outline:none;
+z-index:50;
+background-image:url(../gfx/prev_next.png);
+width:42px;
+height:42px;
+position:absolute;
+top:50%;
+margin-top:-34px;
+}
+
+.prev {
+background-position:0 0;
+left:15px;
+}
+
+.prev:hover {
+background-position:0 -44px;
+}
+
+.next {
+right:15px;
+background-position:-44px 0;
+}
+
+.next:hover {
+background-position:-44px -44px;
+}
+
+.sliderContent .item {
+position:absolute;
+width:800px;
+height:350px;
+background:#fff;
+}
+
+.sliderBullets {
+position:absolute;
+bottom:0;
+left:50%;
+z-index:50;
+margin-left:-45px;
+}
+
+.sliderBullets a {
+display:block;
+float:left;
+text-indent:-9999px;
+outline:none;
+margin-left:5px;
+width:10px;
+height:11px;
+background:url(../gfx/bullets.png) no-repeat;
+}
+
+.sliderBullets .active {
+background-position:0 -11px;
+}
+
+.sliderContent a {
+outline:none;
+}
+
+a {
+color:#fff;
+}
+
+a img {
+border:none;
+}
